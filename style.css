@@ -1,0 +1,109 @@
+
+
+.navegation-index {
+    background-color: rgb(230, 228, 228);
+    border-radius: 5px;
+    border-style: groove;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: #19647E;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 74px 1px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 0px 74px 1px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 0px 74px 1px rgba(0, 0, 0, 0.24);
+}
+
+.navegation-index ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navegation-index li {
+    margin: 0 10px; /* Espaciado entre elementos */
+}
+
+/* Ajustes para las opciones de navegación */
+.navegation-index-options {
+    padding: 10px 20px; /* Define un padding fijo */
+    color: #19647E;  
+    border-radius: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el texto */
+    box-sizing: border-box;
+    margin: 0; /* Sin margen */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.navegation-index-options:hover {
+    border: transparent;
+    color: white;
+    background-color: #92908b; /* Color de fondo al pasar el mouse */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Añadir sombra solo en hover */
+}
+.extra{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: right;
+    gap: 30px
+}
+.sign-in-index{
+    border-radius: 5px;
+}
+#sign-in-index-btn{
+    border-radius: 15px;
+    background-color: rgb(90, 166, 238);
+    padding: 10px 20px;
+}
+#sign-in-index-btn:hover{
+    border: white;
+}
+/* Otros estilos del body y texto */
+body {
+    background-color: #ffffff;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #19647E;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    cursor: default;
+}
+
+marquee:hover {
+    cursor: default;
+}
+
+marquee {
+    color: rgb(78, 78, 76);
+}
+
+.primerparrafo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; /* Agregué la unidad */
+    color: #19647E;
+    text-align: justify;
+    margin: auto; /* Esto reemplaza margin-left y margin-right */
+    display: inline;
+    place-items: center;
+    cursor: default;
+}
+
+.sign-up-from-index {
+    color: #19647E;
+    cursor: pointer; /* Puede que 'default' no sea adecuado si quieres que parezca un enlace interactivo */
+}
+
+.sign-up-from-index:hover {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #FFC857;
+}
