@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="content-publics.css">
     <link rel="icon" href="recursos-img/image_no_bg_final.png" type="image/x-icon">
     <script src="upload-photo.js"></script>
+    <script src="post-publi.js"></script>
+
 </head>
 <body>    
         <nav class="navegation-index">
@@ -37,8 +39,19 @@
         
         <div class="first-section-what-u-thinking-about">
             <div class="profile"><a href="profile.html" class="profile"><img src="recursos-img/profile-default.jpg" class="profile-photo"/></a></div>
+                
             <div class="send-message-block">
-                <a class="ask-what-u-thinking" type="text" href="new-post.html">¿Qué estás pensando, User?</a>
+                <a id="new-post" class="ask-what-u-thinking" type="text" href="#">¿Qué estás pensando, User?</a>
+                <div id="popup-publi" class="popup-publi">
+                    <div class="popup-content-publi">
+                        <span class="close-publi">&times;</span>
+                        <h2>Publicar</h2>
+                        <form id="ask-what-u-thinking-form" class="ask-what-u-thinking-form">
+                            <input type="text" id="btn-new-post" name="file" required class="btn-new-post-of" placeholder="¿Qué estás pensando, User?">
+                            <button type="submit" class="btn-new-post">Publicar</button>
+                        </form>
+                    </div>
+                </div>
                 <a class="send-message"><img src="recursos-img/send-message.png" class="send-message"/></a>
             </div>
         </div>

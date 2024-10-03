@@ -11,9 +11,6 @@
     padding: 10px;
     margin-top: 30px;
 }
-.content-publi a{
-    
-}
 h2{
     font-size: 35px;
 }
@@ -21,8 +18,10 @@ h2{
     text-decoration: none;
     background-color: #b8e7f5;
     color: white;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    border-style: groove;
 }
 #visit-site:hover{
-    background-color: red;
+    background-color: rgb(248, 248, 169);
+    color: black;
 }
