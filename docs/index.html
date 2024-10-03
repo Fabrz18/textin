@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/content-publics.css">
+    <link rel="stylesheet" type="text/css" href="styles/style-sign-up.css">
+    <link rel="icon" href="recursos-img/image_no_bg_final.png" type="image/x-icon">
+    <script src="scripts/upload-photo.js"></script>
+    <script src="scripts/post-publi.js"></script>
+    <script src="scripts/content-extra-publi.js"></script>
+    <script src="scripts/public-a-blog.js"></script>
+</head>
+<body>    
+        <nav class="navegation-index">
+            <ul>
+                <li><a href="#home" class="navegation-index-options">Inicio</a></li>
+                <li><a href="#about" class="navegation-index-options">Acerca de</a></li>
+                <li><a href="#services" class="navegation-index-options">Servicios</a></li>
+                <li><a href="#contact" class="navegation-index-options">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="extra">
+            <div class="sign-in-index">
+                <a href="sign-in.html" id="sign-in-index-btn">Sign In</a>
+            </div>
+            <div class="sign-up-index">
+                <a href="sign-up.html" id="sign-up-index-btn">Sign Up</a>
+            </div>
+        </div> 
+        <div class="title">
+            ¡Bienvenido a TextIn!
+        </div>
+        <marquee>Te invitamos a formar parte de nuestra comunidad, ¡Registrate! es gratis</marquee>
+        <div class="primerparrafo">
+            Te damos la bienvenida a esta nueva página web para que publiques tus blogs, te invitamos a <a href="sign-up.html" class="sign-up-from-index">crear una cuenta </a> para que puedas compartir tus experiencias en el blog 
+        </div>
+    <div class="what-u-thinking-about">
+        
+        <div class="first-section-what-u-thinking-about">
+            <div class="profile"><a href="profile.html" class="profile"><img src="recursos-img/profile-default.jpg" class="profile-photo"/></a></div>
+                
+            <div class="send-message-block">
+                <a id="new-post" class="ask-what-u-thinking" type="text" href="#">¿Qué estás pensando, User?</a>
+                <div id="popup-publi" class="popup-publi">
+                    <div class="popup-content-publi">
+                        <span class="close-publi">&times;</span>
+                        <h2>Publicar</h2>
+                        <form id="ask-what-u-thinking-form" class="ask-what-u-thinking-form">
+                                <textarea id="thought-input" class="thought-input" placeholder="¿Qué estás pensando, User?"></textarea>
+                                <button type="submit" class="btn-new-post" id="btn-new-post">Publicar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-section-what-u-thinking-about">
+            <a href="#" id="upload-photo" class="btn-upload-photo-of"><img src="recursos-img/transparent-img-camera.png" class="upload-photo-png"/> Subir Documento</a>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2>Subir Documento</h2>
+                    <form id="upload-form">
+                        <input type="file" id="btn-upload-photo-input" name="file" required class="btn-upload-photo-input">
+                        <button type="submit" class="btn-upload-photo">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="publics-body" id="publics-body">
+        <div class="content-publi">
+            <h2>Ministro Santiváñez respondió por ola de inseguridad ante un Congreso con gran cantidad de escaños vacíos.</h2>
+            <p>Tras responder a un pliego interpelatorio de 29 preguntas, resultó llamativa la poca presencia de parlamentarios en sus escaños antes y durante el debate en el hemiciclo.</p>
+            <p>El ministro del Interior, Juan José Santiváñez, respondió este miércoles 2 de octubre por la creciente ola de inseguridad ciudadana ante un Congreso de la República con gran cantidad de escaños vacíos.</p>
+            <p> El titular de Mininter se presentó ante la representación nacional para responder un pliego interpelatorio de 29 preguntas respecto de la inseguridad ciudadana y los cuestionamientos sobre su desempeño en el cargo.</p>
+            <a href="https://elcomercio.pe/politica/congreso/juan-jose-santivanez-ministro-del-interior-respondio-por-ola-de-inseguridad-ante-un-congreso-con-gran-cantidad-de-escanos-vacios-seguridad-ciudadana-ultimas-noticia/" id="visit-site">Visitar diario</a>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

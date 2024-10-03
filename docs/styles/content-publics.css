@@ -1,0 +1,140 @@
+.content-publi{
+    background-color: #dce6e9;
+    color: black;
+    border-radius:5px ;
+    border: 1.5px solid black;
+    width: 800px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 30px;
+}
+h2{
+    font-size: 35px;
+}
+#visit-site{
+    text-decoration: none;
+    background-color: #b8e7f5;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    border-style: groove;
+}
+#visit-site:hover{
+    background-color: rgb(248, 248, 169);
+    color: black;
+}
+.thought-box {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    height: 100%;
+    padding: 20px;
+}
+.thought-input {
+    width: 100%;
+    height: auto;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #333;
+    padding: 10px;
+    resize: none;
+    height: 60px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+/* Estilos para navegadores basados en WebKit (Chrome, Safari, Edge) */
+.thought-input::-webkit-scrollbar {
+    width: 8px; /* Ancho del scroll */
+}
+
+.thought-input::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Fondo del scroll */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.thought-input::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color de la barra de desplazamiento */
+    border-radius: 10px; /* Bordes redondeados del scroll */
+    border: 2px solid transparent; /* Espacio alrededor del "thumb" */
+}
+
+.thought-input::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cambia de color al pasar el mouse */
+}
+
+/* Estilos para Firefox */
+.thought-input {
+    scrollbar-width: thin; /* Grosor del scroll */
+    scrollbar-color: #888 #f1f1f1; /* Color del scroll y de la pista */
+}
+.thought-input:focus {
+    background-color: white;
+}
+
+.publics-body {
+    margin: 20px auto; /* Margen para centrar el contenedor */
+    max-width: 800px; /* Ancho máximo para las publicaciones */
+    background-color: #ffffff; /* Fondo blanco para las publicaciones */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Espaciado interno */
+}
+
+.content-publi {
+    margin-bottom: 20px; /* Espaciado entre publicaciones */
+    padding: 15px; /* Espaciado interno de cada publicación */
+    border-left: 4px solid #19647E; /* Línea izquierda de color */
+    transition: transform 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+.content-publi:hover {
+    transform: translateY(-3px); /* Levanta la publicación al pasar el ratón */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el ratón */
+}
+
+.content-publi h2 {
+    font-size: 24px; /* Tamaño de fuente para el título */
+    color: #19647E; /* Color del título */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.content-publi p {
+    font-size: 16px; /* Tamaño de fuente para el texto */
+    color: #333; /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+#visit-site {
+    display: inline-block; /* Para que el enlace tenga margen */
+    margin-top: 10px; /* Espacio arriba del enlace */
+    color: #fff; /* Color del texto del enlace */
+    background-color: #19647E; /* Color de fondo */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+#visit-site:hover {
+    background-color: #155d7e; /* Color más oscuro al pasar el ratón */
+}
+.publication {
+    background-color: #fff; /* Fondo blanco para las publicaciones */
+    border: 1px solid #ccc; /* Borde sutil */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    margin: 10px 0; /* Margen entre publicaciones */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.2s; /* Efecto de transición al pasar el mouse */
+}
+
+.publication:hover {
+    transform: scale(1.02); /* Aumentar ligeramente al pasar el mouse */
+}

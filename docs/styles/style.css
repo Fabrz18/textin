@@ -1,0 +1,371 @@
+
+
+    .navegation-index {
+        background-color: rgb(230, 228, 228);
+        border-radius: 5px;
+        border-style: groove;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        color: #19647E;
+        text-align: center;
+        -webkit-box-shadow: 0px 0px 74px 1px rgba(0, 0, 0, 0.24);
+        -moz-box-shadow: 0px 0px 74px 1px rgba(0, 0, 0, 0.24);
+        box-shadow: 0px 0px 74px 1px rgba(0, 0, 0, 0.24);
+    }
+
+    .navegation-index ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .navegation-index li {
+        margin: 0 10px; /* Espaciado entre elementos */
+    }
+
+    /* Ajustes para las opciones de navegación */
+    .navegation-index-options {
+        padding: 10px 20px; /* Define un padding fijo */
+        color: #19647E;  
+        border-radius: 15px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Centra el texto */
+        box-sizing: border-box;
+        margin: 0; /* Sin margen */
+        transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    }
+    .upload-photo-png{
+        width: 30px;
+        height: 30px;
+        margin-right: 4px;
+        margin-left: 2px;
+    }
+    .navegation-index-options:hover {
+        border: transparent;
+        color: white;
+        background-color: #92908b; /* Color de fondo al pasar el mouse */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Añadir sombra solo en hover */
+    }
+    .extra{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        align-items: center;
+        display: flex;
+        justify-content: right;
+        gap: 30px
+    }
+    .sign-in-index{
+        border-radius: 5px;
+    }
+    #sign-in-index-btn{
+        border-radius: 15px;
+        background-color: rgb(90, 166, 238);
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin: 0;
+        box-sizing: border-box;
+        border: 2px solid transparent; /*Si se quita esta opcion la animacion al hacer el hover se mueve bruscamente*/
+        transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    }
+    #sign-in-index-btn:hover{
+        border-style: ridge;
+        background-color: white;
+        color: rgb(90, 166, 238);
+        border-color: rgb(90, 166, 238);
+        box-shadow: 0 4px 10px rgb(139, 147, 151);
+    }
+    /*Para el sign up*/
+    .sign-up-index{
+        border-radius: 5px;
+    }
+    #sign-up-index-btn{
+        border-radius: 15px;
+        background-color: rgb(255, 255, 255);
+        color: #19647E;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin: 0;
+        box-sizing: border-box;
+        border: 2px solid #19647E;
+        transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease; /* Transiciones suaves */
+    }
+    #sign-up-index-btn:hover{
+        border-style: ridge;
+        background-color: #19647E;
+        color: white;
+        border-color: transparent;
+        box-shadow: 0 4px 10px rgb(139, 147, 151);
+    }
+    .what-u-thinking-about{
+        background-color: #d6eff7;
+        border-radius: 5px;
+        width: 500px;
+        height: 200px;
+        margin: 0 auto;
+        max-width: 100%;
+        border-top: 50px;
+        border-bottom: 50px;
+        /**/
+        padding: 20px; /* Añadir espacio interno alrededor de los elementos */
+        box-sizing: border-box; /* Asegura que el padding no aumente el tamaño total del contenedor */
+        /**/
+        margin-top: 30px;
+        -webkit-box-shadow:0px 0px 113px 25px rgba(154,252,247,0.29);
+-moz-box-shadow: 0px 0px 113px 25px rgba(154,252,247,0.29);
+box-shadow: 0px 0px 113px 25px rgba(154,252,247,0.29);
+    }
+    .first-section-what-u-thinking-about{
+        display: flex;
+        
+    }
+    .send-message-block {
+        display: flex;
+        align-items: center;
+        justify-content: left; /* Cambia "right" a "left" para alinear el ícono hacia la izquierda */
+        gap: 2px; /* Puedes ajustar este valor si quieres cambiar la separación entre el ícono y el campo de texto */
+    }
+    
+    .send-message {
+        width: 40px;
+        height: 40px;
+        margin-left: -15px; /* Ajusta este valor según lo necesites */
+        cursor: pointer;
+    }
+    
+    .profile{
+        width: 25px;
+        height: 25px;
+        border-radius: 50px;
+    }
+    .profile-photo{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        border-style: groove;
+        transition: filter 0.3s ease;
+    }
+    .profile-photo:hover{
+        filter: brightness(84%);
+    }
+    .ask-what-u-thinking{
+        background-color: aliceblue;
+        color: rgb(128, 128, 128);
+        text-decoration: none;
+        width: 350px;
+        height: 50px;
+        border-radius: 50px;
+        margin: 0 40px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        align-items: center;
+        cursor: text;
+        display: flex;
+        font-size: 20px;
+        border: 1px solid black;
+        border-style: groove;
+        transition: filter 0.2s ease;
+    }
+    .ask-what-u-thinking:hover{
+        filter: brightness(87%);
+    }
+    /* Otros estilos del body y texto */
+    body {
+        background-color: #eff5faf3;
+    }
+
+    .title {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        color: #19647E;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: grid;
+        cursor: default;
+    }
+    marquee:hover {
+        cursor: default;
+    }
+    marquee {
+        color: rgb(78, 78, 76);
+    }
+
+    .primerparrafo {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px; /* Agregué la unidad */
+        color: #19647E;
+        text-align: justify;
+        margin: auto; /* Esto reemplaza margin-left y margin-right */
+        display: inline;
+        place-items: center;
+        cursor: default;
+    }
+
+    .sign-up-from-index {
+        color: #19647E;
+        cursor: pointer; /* Puede que 'default' no sea adecuado si quieres que parezca un enlace interactivo */
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .sign-up-from-index:hover {
+        
+        color: #FFC857;
+    }
+
+
+    /**/
+    .popup {
+        display: none; /* Oculto por defecto */
+        position: fixed; /* Queda fijo en la ventana */
+        
+        z-index: 1; /* Está por encima de otros elementos */
+        left: 0;
+        top: 0;
+        width: 100%; /* Ancho completo */
+        height: 100%; /* Alto completo */
+        overflow: auto; /* Permite desplazamiento si es necesario */
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    }
+    .popup-publi{
+        display: none;
+        position: fixed;
+        z-index: 1; /* Está por encima de otros elementos */
+        left: 0;
+        top: 0;
+        width: 100%; /* Ancho completo */
+        height: 100%; /* Alto completo */
+        overflow: auto; /* Permite desplazamiento si es necesario */
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    }
+    .popup-content-publi {
+        background-color: #fefefe;
+        border-radius: 15px;
+        height: 500px;
+        margin: 15% auto; /* Centro vertical */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 400px; /* Ancho de la ventana */
+    }
+    .close-publi{
+        background-color: red;
+        color: red;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        transition: background-color 0.18s ease, color 0.18s ease;
+        border-radius: 15px;
+        
+    }
+    .close-publi:hover,
+    .close-publi:focus {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .btn-new-post-of{
+        background-color: white;
+        border-radius: 5px;
+        border: transparent;
+    }
+    .ask-what-u-thinking-form{
+        display: flex;
+        flex-direction: column; /* Disponer los elementos en columna */
+        justify-content: space-between; /* Espaciado entre elementos */
+        height: 300px; /* Ajusta la altura según sea necesario */
+        padding: 20px; /* Espacio interno */
+        background-color: white; /* Color de fondo del modal */
+        border-radius: 8px; /* Bordes redondeados */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.09); /* Sombra */
+    }
+    /**/
+    .popup-content {
+        background-color: #fefefe;
+        border-radius: 15px;
+        height: 200px;
+        margin: 15% auto; /* Centro vertical */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 300px; /* Ancho de la ventana */
+    }
+    
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        border-radius: 15px;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: rgb(255, 255, 255);
+        background-color: red;
+
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .btn-new-post-text{
+        border: 1px solid rgb(145, 198, 241);
+        border-radius: 5px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .btn-upload-photo-input {
+        display: block; /* Para ocupar el espacio completo */
+        width: 100%; /* Asegura que ocupa todo el ancho */
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc; /* Cambiar según sea necesario */
+        cursor: pointer;
+        transition: background-color 0.3s ease; /* Transición suave */
+    }
+    
+    .btn-upload-photo-input:hover {
+        background-color: rgba(90, 166, 238, 0.7); /* Cambia el color al pasar el mouse */
+    }
+    .btn-upload-photo {
+        background-color: rgb(90, 166, 238); /* Color de fondo */
+        color: white; /* Color del texto */
+        padding: 10px 20px; /* Espaciado interno */
+        border: none; /* Sin borde */
+        border-radius: 5px; /* Bordes redondeados */
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        transition: background-color 0.3s ease; /* Transición suave */
+    }
+    
+    .btn-upload-photo:hover {
+        background-color: rgb(70, 140, 210); /* Color de fondo al pasar el mouse */
+    }
+    /**/
+    .btn-upload-photo-of{
+        border-radius: 5px;
+        background-color: #d6eff7;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        color: gray;
+        width: 150px;
+        height: 60px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+    }
+    .btn-upload-photo-of:hover{
+        background-color: #d2e4f1;
+    }
+    .second-section-what-u-thinking-about{
+        margin-top: 15px;
+        display: flex;
+        margin-bottom: 15px;
+        
+    }
+    .send-message{
+        width: 40px;
+        height: 40px;
+    }
