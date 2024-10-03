@@ -116,8 +116,8 @@
         /**/
         margin-top: 30px;
         -webkit-box-shadow:0px 0px 113px 25px rgba(154,252,247,0.29);
--moz-box-shadow: 0px 0px 113px 25px rgba(154,252,247,0.29);
-box-shadow: 0px 0px 113px 25px rgba(154,252,247,0.29);
+        -moz-box-shadow: 0px 0px 113px 25px rgba(154,252,247,0.29);
+        box-shadow: 0px 0px 113px 25px rgba(154,252,247,0.29);
     }
     .first-section-what-u-thinking-about{
         display: flex;
