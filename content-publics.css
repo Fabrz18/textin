@@ -1,0 +1,28 @@
+.content-publi{
+    background-color: #dce6e9;
+    color: black;
+    border-radius:5px ;
+    border: 1.5px solid black;
+    width: 800px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 30px;
+}
+.content-publi a{
+    
+}
+h2{
+    font-size: 35px;
+}
+#visit-site{
+    text-decoration: none;
+    background-color: #b8e7f5;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+#visit-site:hover{
+    background-color: red;
+}
