@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="content-publics.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/content-publics.css">
+    <link rel="stylesheet" type="text/css" href="styles/style-sign-up.css">
     <link rel="icon" href="recursos-img/image_no_bg_final.png" type="image/x-icon">
-    <script src="upload-photo.js"></script>
-    <script src="post-publi.js"></script>
-
+    <script src="scripts/upload-photo.js"></script>
+    <script src="scripts/post-publi.js"></script>
+    <script src="scripts/content-extra-publi.js"></script>
+    <script src="scripts/public-a-blog.js"></script>
 </head>
 <body>    
         <nav class="navegation-index">
@@ -47,12 +48,11 @@
                         <span class="close-publi">&times;</span>
                         <h2>Publicar</h2>
                         <form id="ask-what-u-thinking-form" class="ask-what-u-thinking-form">
-                            <input type="text" id="btn-new-post" name="file" required class="btn-new-post-of" placeholder="¿Qué estás pensando, User?">
-                            <button type="submit" class="btn-new-post">Publicar</button>
+                                <textarea id="thought-input" class="thought-input" placeholder="¿Qué estás pensando, User?"></textarea>
+                                <button type="submit" class="btn-new-post" id="btn-new-post">Publicar</button>
                         </form>
                     </div>
                 </div>
-                <a class="send-message"><img src="recursos-img/send-message.png" class="send-message"/></a>
             </div>
         </div>
         <div class="second-section-what-u-thinking-about">
@@ -69,13 +69,16 @@
             </div>
         </div>
     </div>
-    <div class="content-publi">
-        <h2>Ministro Santiváñez respondió por ola de inseguridad ante un Congreso con gran cantidad de escaños vacíos.</h2>
-        <p>Tras responder a un pliego interpelatorio de 29 preguntas, resultó llamativa la poca presencia de parlamentarios en sus escaños antes y durante el debate en el hemiciclo.</p>
-        <p>El ministro del Interior, Juan José Santiváñez, respondió este miércoles 2 de octubre por la creciente ola de inseguridad ciudadana ante un Congreso de la República con gran cantidad de escaños vacíos.</p>
-        <p> El titular de Mininter se presentó ante la representación nacional para responder un pliego interpelatorio de 29 preguntas respecto de la inseguridad ciudadana y los cuestionamientos sobre su desempeño en el cargo.</p>
-        <a href="https://elcomercio.pe/politica/congreso/juan-jose-santivanez-ministro-del-interior-respondio-por-ola-de-inseguridad-ante-un-congreso-con-gran-cantidad-de-escanos-vacios-seguridad-ciudadana-ultimas-noticia/" id="visit-site">Visitar diario</a>
+    <div class="publics-body" id="publics-body">
+        <div class="content-publi">
+            <h2>Ministro Santiváñez respondió por ola de inseguridad ante un Congreso con gran cantidad de escaños vacíos.</h2>
+            <p>Tras responder a un pliego interpelatorio de 29 preguntas, resultó llamativa la poca presencia de parlamentarios en sus escaños antes y durante el debate en el hemiciclo.</p>
+            <p>El ministro del Interior, Juan José Santiváñez, respondió este miércoles 2 de octubre por la creciente ola de inseguridad ciudadana ante un Congreso de la República con gran cantidad de escaños vacíos.</p>
+            <p> El titular de Mininter se presentó ante la representación nacional para responder un pliego interpelatorio de 29 preguntas respecto de la inseguridad ciudadana y los cuestionamientos sobre su desempeño en el cargo.</p>
+            <a href="https://elcomercio.pe/politica/congreso/juan-jose-santivanez-ministro-del-interior-respondio-por-ola-de-inseguridad-ante-un-congreso-con-gran-cantidad-de-escanos-vacios-seguridad-ciudadana-ultimas-noticia/" id="visit-site">Visitar diario</a>
+        </div>
     </div>
+    
     
 </body>
 </html>

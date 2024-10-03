@@ -3,11 +3,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const uploadLink = document.getElementById("new-post");
     const popup = document.getElementById("popup-publi");
     const closeBtn = document.getElementsByClassName("close-publi")[0];
-
+    
     // Muestra el popup cuando se hace clic en el enlace
     uploadLink.onclick = function(event) {
         event.preventDefault(); // Previene el comportamiento predeterminado del enlace
         popup.style.display = "block"; // Muestra el popup
+        const textarea = document.getElementById('thought-input');
+        textarea.focus();
     }
 
     // Cierra el popup cuando se hace clic en el botón de cerrar
