@@ -6,9 +6,9 @@
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="recursos-img/image_no_bg_final.png" type="image/x-icon">
+    <script src="upload-photo.js"></script>
 </head>
-<body>
-    
+<body>    
         <nav class="navegation-index">
             <ul>
                 <li><a href="#home" class="navegation-index-options">Inicio</a></li>
@@ -32,6 +32,25 @@
         <div class="primerparrafo">
             Te damos la bienvenida a esta nueva página web para que publiques tus blogs, te invitamos a <a href="sign-up.html" class="sign-up-from-index">crear una cuenta </a> para que puedas compartir tus experiencias en el blog 
         </div>
+    <div class="what-u-thinking-about">
+        
+        <div class="first-section-what-u-thinking-about">
+            <div class="profile"><a href="profile.html" class="profile"><img src="recursos-img/profile-default.jpg" class="profile-photo"/></a></div>
+            <a class="ask-what-u-thinking" type="text" href="new-post.html">¿Qué estás pensando, User?</a>
+        </div>
+        <div class="second-section-what-u-thinking-about">
+            <a href="#" id="upload-photo" class="btn-upload-photo-of">Subir Documento</a>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2>Subir Documento</h2>
+                    <form id="upload-form">
+                        <input type="file" id="btn-upload-photo-input" name="file" required class="btn-upload-photo-input">
+                        <button type="submit" class="btn-upload-photo">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
