@@ -10,7 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault(); // Evita el envío del formulario tradicional
 
         // Obtén el valor del textarea
+        const title = 'User'
         const thought = textarea.value.trim();
+        const fechita = new Date().toLocaleString()
+        
 
         if (thought) {
             // Crea un nuevo div para el pensamiento
@@ -19,8 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
             thoughtDiv.className = "publication"
             // Agrega el contenido
             thoughtDiv.innerHTML = `
+                <p>${title} </p>
                 <p>${thought}</p>
-                <p><small>${new Date().toLocaleString()}</small></p>
+                <p><small>${fechita}</small></p>
             `;
 
             // Añade el nuevo div al contenedor

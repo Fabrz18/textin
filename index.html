@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
@@ -13,36 +14,59 @@
     <script src="scripts/content-extra-publi.js"></script>
     <script src="scripts/public-a-blog.js"></script>
     <script src="scripts/complete-form.js"></script>
+    <script type="module" src="scripts/fire-base.js"></script>
+    <!-- Firebase Configuration -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-analytics.js";
+
+        const firebaseConfig = {
+          apiKey: "AIzaSyBEHNcSMMm6Pzg9SHNP0HxJawTlAkdbDx8",
+          authDomain: "textin-database-blogs.firebaseapp.com",
+          projectId: "textin-database-blogs",
+          storageBucket: "textin-database-blogs.appspot.com",
+          messagingSenderId: "1096647351736",
+          appId: "1:1096647351736:web:e8846ecaec28c6b219034d",
+          measurementId: "G-WRNP1W0HC3"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
 </head>
-<body>    
-        <nav class="navegation-index">
-            <ul>
-                <li><a href="#home" class="navegation-index-options">Inicio</a></li>
-                <li><a href="#about" class="navegation-index-options">Acerca de</a></li>
-                <li><a href="#services" class="navegation-index-options">Servicios</a></li>
-                <li><a href="#contact" class="navegation-index-options">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="extra">
-            <div class="sign-in-index">
-                <a href="sign-in.html" id="sign-in-index-btn">Sign In</a>
-            </div>
-            <div class="sign-up-index">
-                <a href="sign-up.html" id="sign-up-index-btn">Sign Up</a>
-            </div>
-        </div> 
-        <div class="title">
-            ¡Bienvenido a TextIn!
+
+<body>
+    <nav class="navegation-index">
+        <ul>
+            <li><a href="#home" class="navegation-index-options">Inicio</a></li>
+            <li><a href="#about" class="navegation-index-options">Acerca de</a></li>
+            <li><a href="#services" class="navegation-index-options">Servicios</a></li>
+            <li><a href="#contact" class="navegation-index-options">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="extra">
+        <div class="sign-in-index">
+            <a href="/sign-in" id="sign-in-index-btn">Sign In</a>
         </div>
-        <marquee>Te invitamos a formar parte de nuestra comunidad, ¡Registrate! es gratis</marquee>
-        <div class="primerparrafo">
-            Te damos la bienvenida a esta nueva página web para que publiques tus blogs, te invitamos a <a href="sign-up.html" class="sign-up-from-index">crear una cuenta </a> para que puedas compartir tus experiencias en el blog 
+        <div class="sign-up-index">
+            <a href="/sign-up" id="sign-up-index-btn">Sign Up</a>
         </div>
+    </div> 
+
+    <div class="title">¡Bienvenido a TextIn!</div>
+
+    <div class="primerparrafo">
+        Te damos la bienvenida a esta nueva página web para que publiques tus blogs, te invitamos a <a href="sign-up.html" class="sign-up-from-index">crear una cuenta</a> para que puedas compartir tus experiencias en el blog.
+    </div>
+
     <div class="what-u-thinking-about">
-        
         <div class="first-section-what-u-thinking-about">
-            <div class="profile"><a href="profile.html" class="profile"><img src="recursos-img/profile-default.jpg" class="profile-photo"/></a></div>
-                
+            <div class="profile">
+                <a href="/profile" class="profile"><img src="recursos-img/profile-default.jpg" class="profile-photo"/></a>
+            </div>
+
             <div class="send-message-block">
                 <a id="new-post" class="ask-what-u-thinking" type="text" href="#">¿Qué estás pensando, User?</a>
                 <div id="popup-publi" class="popup-publi">
@@ -50,15 +74,19 @@
                         <span class="close-publi">&times;</span>
                         <h2>Publicar</h2>
                         <form id="ask-what-u-thinking-form" class="ask-what-u-thinking-form">
-                                <textarea id="thought-input" class="thought-input" placeholder="¿Qué estás pensando, User?"></textarea>
-                                <button type="submit" class="btn-new-post" id="btn-new-post">Publicar</button>
+                            <input type="text" id="thought-title" placeholder="Título del blog" required />
+                            <textarea id="thought-content" class="thought-input" placeholder="¿Qué estás pensando, User?" required></textarea>
+                            <button type="submit" class="btn-new-post" id="btn-new-post">Publicar</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="second-section-what-u-thinking-about">
-            <a href="#" id="upload-photo" class="btn-upload-photo-of"><img src="recursos-img/transparent-img-camera.png" class="upload-photo-png"/> Subir Documento</a>
+            <a href="#" id="upload-photo" class="btn-upload-photo-of">
+                <img src="recursos-img/transparent-img-camera.png" class="upload-photo-png"/> Subir Documento
+            </a>
             <div id="popup" class="popup">
                 <div class="popup-content">
                     <span class="close">&times;</span>
@@ -71,6 +99,7 @@
             </div>
         </div>
     </div>
+
     <div class="publics-body" id="publics-body">
         <div class="content-publi">
             <h2>Ministro Santiváñez respondió por ola de inseguridad ante un Congreso con gran cantidad de escaños vacíos.</h2>
@@ -79,6 +108,66 @@
             <p> El titular de Mininter se presentó ante la representación nacional para responder un pliego interpelatorio de 29 preguntas respecto de la inseguridad ciudadana y los cuestionamientos sobre su desempeño en el cargo.</p>
             <a href="https://elcomercio.pe/politica/congreso/juan-jose-santivanez-ministro-del-interior-respondio-por-ola-de-inseguridad-ante-un-congreso-con-gran-cantidad-de-escanos-vacios-seguridad-ciudadana-ultimas-noticia/" id="visit-site">Visitar diario</a>
         </div>
+
+        <!-- Firebase Firestore Script -->
+        <script type="module">
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
+            import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js";
+        
+            const firebaseConfig1 = {
+                apiKey: "AIzaSyBEHNcSMMm6Pzg9SHNP0HxJawTlAkdbDx8",
+                authDomain: "textin-database-blogs.firebaseapp.com",
+                projectId: "textin-database-blogs",
+                storageBucket: "textin-database-blogs.appspot.com",
+                messagingSenderId: "1096647351736",
+                appId: "1:1096647351736:web:e8846ecaec28c6b219034d",
+                measurementId: "G-WRNP1W0HC3"
+            };
+        
+            const app1 = initializeApp(firebaseConfig1);
+            const db = getFirestore(app1);
+        
+            async function cargarPublicaciones() {
+                const publicsBody = document.getElementById("publics-body");
+                try {
+                    const querySnapshot = await getDocs(collection(db, "publicaciones"));
+                    
+                    // Limpiar el contenedor solo si deseas reinicializar
+                    // publicsBody.innerHTML = ''; 
+        
+                    // Crear un array para mantener las publicaciones existentes
+                    const publicacionesExistentes = [];
+        
+                    querySnapshot.forEach((doc) => {
+                        const publicacion = doc.data();
+                        const fecha = publicacion.fecha.toDate(); // Convertir Timestamp a Date
+                        const fechaFormateada = fecha.toLocaleDateString(); // Formatear la fecha
+        
+                        // Crear un nuevo elemento para mostrar la publicación
+                        const publicacionDiv = document.createElement("div");
+                        publicacionDiv.classList.add("publication"); // Añadir una clase opcional para estilos
+                        publicacionDiv.innerHTML = `
+                            <h3 id="titulo">${publicacion.titulo}</h3>
+                            <p id=contenido>${publicacion.contenido}</p>
+                            <small id="fecha">Fecha: ${fechaFormateada}</small>
+                        `;
+                        // Añadir la publicación al contenedor
+                        publicsBody.appendChild(publicacionDiv);
+        
+                        // Guardar en el array las publicaciones existentes
+                        publicacionesExistentes.push(doc.id);
+                    });
+        
+                    console.log("Publicaciones existentes:", publicacionesExistentes);
+                } catch (error) {
+                    console.error("Error al cargar las publicaciones:", error);
+                }
+            }
+        
+            // Llamar a la función para cargar publicaciones después de inicializar Firestore
+            cargarPublicaciones();
+        </script>
+        
     </div>
     
     
