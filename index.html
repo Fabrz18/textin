@@ -15,6 +15,9 @@
     <script src="scripts/public-a-blog.js"></script>
     <script src="scripts/complete-form.js"></script>
     <script type="module" src="scripts/fire-base.js"></script>
+    <script src="scripts/popup-focus.js"></script>
+    <script src="scripts/agrandar-text-area.js"></script>
+
     <!-- Firebase Configuration -->
     <script type="module">
         // Import the functions you need from the SDKs you need
@@ -74,12 +77,12 @@
                         <span class="close-publi">&times;</span>
                         <h2>Publicar</h2>
                         <form id="ask-what-u-thinking-form" class="ask-what-u-thinking-form">
-                            <input type="text" id="thought-title" placeholder="Título del blog" required />
+                            <input id="thought-title" class="thought-title" placeholder="Título del blog (Opcional)" required/>
                             <textarea id="thought-content" class="thought-input" placeholder="¿Qué estás pensando, User?" required></textarea>
                             <button type="submit" class="btn-new-post" id="btn-new-post">Publicar</button>
                         </form>
                     </div>
-                </div>
+                </div>             
             </div>
         </div>
 
@@ -192,7 +195,7 @@
             </div>
             <div class="flex-col">
                 <label class="upper-input-forms">Correo *</label>
-                <input type="text" name="entry.1721971664" class="input-forms-more-help" required>          
+                <input type="email" name="entry.1721971664" class="input-forms-more-help" required>          
             </div>
             <div class="flex-col">
                 <label class="upper-input-forms">Mensaje *</label>

@@ -35,7 +35,9 @@ h2{
 }
 .thought-input {
     width: 100%;
-    height: auto;
+    height: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
     border: none;
     outline: none;
     font-size: 18px;
@@ -48,11 +50,15 @@ h2{
     border-radius: 10px;
     overflow-y: auto;
 }
+.thought-title{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #155d7e;
+}
 /* Estilos para navegadores basados en WebKit (Chrome, Safari, Edge) */
 .thought-input::-webkit-scrollbar {
     width: 8px; /* Ancho del scroll */
 }
-
 .thought-input::-webkit-scrollbar-track {
     background-color: #f1f1f1; /* Fondo del scroll */
     border-radius: 10px; /* Bordes redondeados */
@@ -62,6 +68,7 @@ h2{
     background-color: #888; /* Color de la barra de desplazamiento */
     border-radius: 10px; /* Bordes redondeados del scroll */
     border: 2px solid transparent; /* Espacio alrededor del "thumb" */
+    cursor: default;
 }
 
 .thought-input::-webkit-scrollbar-thumb:hover {
@@ -69,10 +76,7 @@ h2{
 }
 
 /* Estilos para Firefox */
-.thought-input {
-    scrollbar-width: thin; /* Grosor del scroll */
-    scrollbar-color: #888 #f1f1f1; /* Color del scroll y de la pista */
-}
+
 .thought-input:focus {
     background-color: white;
 }
